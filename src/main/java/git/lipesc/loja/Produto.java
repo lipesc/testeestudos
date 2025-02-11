@@ -2,20 +2,20 @@ package git.lipesc.loja;
 
 public class Produto {
 
-  private String produto;
+  private String nome;
   private double valor;
 
   public Produto(String produto, double valor) {
-    this.produto = produto;
+    this.nome = produto;
     this.valor = valor;
   }
 
-  public String getProduto() {
-    return produto;
+  public String getNome() {
+    return nome;
   }
 
-  public void setProduto(String produto) {
-    this.produto = produto;
+  public void setNome(String produto) {
+    this.nome = produto;
   }
 
   public void setValor(double valor) {

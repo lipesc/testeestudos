@@ -1,6 +1,6 @@
 package git.lipesc.loja;
 
-public class TesteMaiorMenor {
+public class FiltrarCarrinho {
 
   private Produto menor;
   private Produto maior;
@@ -11,7 +11,8 @@ public class TesteMaiorMenor {
     for (Produto produto : carrinho.getProdutos()) {
       if (menor == null || produto.getValor() < menor.getValor()) {
         menor = produto;
-      } else if (maior == null || produto.getValor() > maior.getValor()) {
+      }
+      if (maior == null || produto.getValor() > maior.getValor()) {
         maior = produto;
       }
     }
