@@ -2,11 +2,6 @@ package git.lipesc.loja;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotEquals;
-import static org.junit.jupiter.api.Assertions.assertFalse;
-import static org.junit.jupiter.api.Assertions.assertTrue;
-import static org.junit.jupiter.api.Assertions.assertTrue;
-
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 public class TesteLojaTest {
@@ -20,8 +15,8 @@ public class TesteLojaTest {
     FiltrarCarrinho algoritmo = new FiltrarCarrinho();
     algoritmo.encontrar(carrinho);
 
-    Assertions.assertEquals("Aspirador de pó", algoritmo.getMenor().getNome());
-    Assertions.assertEquals("Geladeira", algoritmo.getMaior().getNome());
+    assertEquals("Aspirador de pó", algoritmo.getMenor().getNome());
+    assertEquals("Geladeira", algoritmo.getMaior().getNome());
 
   }
 
