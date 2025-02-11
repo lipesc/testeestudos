@@ -9,10 +9,11 @@ public class FiltrarCarrinho {
   // carrinho
   public void encontrar(CarrinhoDeCompra carrinho) {
     for (Produto produto : carrinho.getProdutos()) {
-      if (menor == null || produto.getValor() < menor.getValor()) {
+      // erro de logica para ver se os teste mostra
+      if (menor == null || produto.getValor() > menor.getValor()) {
         menor = produto;
       }
-      if (maior == null || produto.getValor() > maior.getValor()) {
+      if (maior == null || produto.getValor() < maior.getValor()) {
         maior = produto;
       }
     }
