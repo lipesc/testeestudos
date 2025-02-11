@@ -1,11 +1,17 @@
 package git.lipesc.loja;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class CarrinhoDeCompra {
 
-  public Produto[] getProduto() {
-    // TODO Auto-generated method stub
-    throw new UnsupportedOperationException("Unimplemented method 'getProduto'");
+  private List<Produto> produtos = new ArrayList<>();
+
+  public void adiciona(Produto produto) {
+    produtos.add(produto);
   }
 
-  
+  public List<Produto> getProdutos() {
+    return produtos;
+  }
 }
