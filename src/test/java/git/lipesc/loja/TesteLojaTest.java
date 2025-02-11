@@ -2,6 +2,9 @@ package git.lipesc.loja;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
@@ -30,5 +33,21 @@ public class TesteLojaTest {
 
     assertEquals(produto1, produto2, "produtos mesmo nome, valor são iguais");
     assertNotEquals(produto1, produto3, "produtos com nomes diferentes nao sao iguais");
+
+  }
+
+  @Test
+  void testGettersAndSetters() {
+    Produto produto1 = new Produto("tv", 10000.0);
+
+    assertEquals("tv", produto1.getNome());
+    assertEquals(10000.0, produto1.getValor());
+
+    produto1.setNome("tv x");
+    produto1.setValor(666.666);
+
+    assertEquals("tv x", produto1.getNome());
+    assertEquals(666.666, produto1.getValor());
+
   }
 }
