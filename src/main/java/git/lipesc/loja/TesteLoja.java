@@ -12,6 +12,7 @@ public class TesteLoja {
     FiltrarCarrinho algoritmo = new FiltrarCarrinho();
     algoritmo.encontrar(carrinho);
 
+    algoritmo.todosProdutos(carrinho);
     System.out.printf("Maior preço do carrinho: %s%n", algoritmo.getMaior().getNome());
     System.out.printf("Menor preço do carrinho: %s%n", algoritmo.getMenor().getNome());
   }

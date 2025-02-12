@@ -19,6 +19,12 @@ public class FiltrarCarrinho {
     }
   }
 
+  public void todosProdutos(CarrinhoDeCompra carrinho) {
+    for (Produto produto : carrinho.getProdutos()) {
+      System.out.println("Item : " + produto.getNome());
+    }
+  }
+
   public Produto getMenor() {
     return menor;
   }
