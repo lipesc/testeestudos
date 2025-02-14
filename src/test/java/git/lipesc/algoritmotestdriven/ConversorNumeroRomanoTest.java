@@ -28,4 +28,11 @@ public class ConversorNumeroRomanoTest {
     int numero = romano.converte("II");
     assertEquals(2, numero);
   }
+
+  @Test
+  void parseQuatroSImbolos() {
+    ConversorNumeroRomano romano = new ConversorNumeroRomano();
+    int numero = romano.converte("XXII");
+    assertEquals(22, numero);
+  }
 }
