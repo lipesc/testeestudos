@@ -35,4 +35,11 @@ public class ConversorNumeroRomanoTest {
     int numero = romano.converte("XXII");
     assertEquals(22, numero);
   }
+
+  @Test
+  void parseSimboloEsquerda() {
+    ConversorNumeroRomano romano = new ConversorNumeroRomano();
+    int numero = romano.converte("IV");
+    assertEquals(4, numero);
+  }
 }

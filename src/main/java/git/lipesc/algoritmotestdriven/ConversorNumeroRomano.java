@@ -19,8 +19,20 @@ public class ConversorNumeroRomano {
 
   public int converte(String numeroEmRomano) {
     int count = 0;
-    for (int i = 0; i < numeroEmRomano.length(); i++) {
-      count += tabela.get(numeroEmRomano.charAt(i));
+    int lastRigth = 0;
+
+    for (int i = numeroEmRomano.length() - 1; i >= 0; i--) {
+
+      int current = tabela.get(numeroEmRomano.charAt(i));
+
+      int multi = 1;
+
+      if (current < lastRigth)
+        multi = -1;
+
+      count += tabela.get(numeroEmRomano.charAt(i)) * multi;
+
+      lastRigth = current;
     }
     return count;
   }
