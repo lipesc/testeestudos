@@ -4,6 +4,10 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotEquals;
 import org.junit.jupiter.api.Test;
 
+import git.lipesc.lojaTesteUnitario.CarrinhoDeCompra;
+import git.lipesc.lojaTesteUnitario.FiltrarCarrinho;
+import git.lipesc.lojaTesteUnitario.Produto;
+
 public class TesteLojaTest {
   @Test
   void testMain() {

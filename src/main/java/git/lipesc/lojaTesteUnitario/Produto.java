@@ -1,4 +1,4 @@
-package git.lipesc.loja;
+package git.lipesc.lojaTesteUnitario;
 
 public class Produto {
 

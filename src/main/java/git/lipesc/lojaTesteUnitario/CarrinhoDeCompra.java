@@ -1,4 +1,4 @@
-package git.lipesc.loja;
+package git.lipesc.lojaTesteUnitario;
 
 import java.util.ArrayList;
 import java.util.List;
