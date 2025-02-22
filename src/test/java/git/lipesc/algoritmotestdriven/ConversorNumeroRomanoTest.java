@@ -39,7 +39,7 @@ public class ConversorNumeroRomanoTest {
   @Test
   void parseSimboloEsquerda() {
     ConversorNumeroRomano romano = new ConversorNumeroRomano();
-    int numero = romano.converte("IV");
-    assertEquals(4, numero);
+    int numero = romano.converte("IX");
+    assertEquals(9, numero);
   }
 }

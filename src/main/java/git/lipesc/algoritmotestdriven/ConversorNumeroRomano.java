@@ -30,7 +30,7 @@ public class ConversorNumeroRomano {
       if (current < lastRigth)
         multi = -1;
 
-      count += tabela.get(numeroEmRomano.charAt(i)) * multi;
+      count += current * multi;
 
       lastRigth = current;
     }
