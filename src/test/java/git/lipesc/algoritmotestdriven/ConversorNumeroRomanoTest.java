@@ -42,4 +42,11 @@ public class ConversorNumeroRomanoTest {
     int numero = romano.converte("IX");
     assertEquals(9, numero);
   }
+
+  @Test
+  public void numerosComplexos() {
+    ConversorNumeroRomano romano = new ConversorNumeroRomano();
+    int numero = romano.converte("XXIV");
+    assertEquals(24, numero);
+  }
 }
